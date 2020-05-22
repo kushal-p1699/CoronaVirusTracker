@@ -148,7 +148,7 @@
                             <div class="card-data">
                                 <h2>Infected</h2>
                                 <h1>{{this.convertToINR(value.cases)}}</h1>
-                                <h3>May 10, 2020</h3>
+                                <h3>{{this.getMonth(month)}} {{date}}, {{year}}</h3>
                             </div>
                         </div>
         
@@ -156,7 +156,7 @@
                             <div class="card-data">
                                 <h2>recovered</h2>
                                 <h1>{{this.convertToINR(value.recovered)}}</h1>
-                                <h3>May 10, 2020</h3>
+                                <h3>{{this.getMonth(month)}} {{date}}, {{year}}</h3>
                             </div>
                         </div>
         
@@ -164,7 +164,7 @@
                             <div class="card-data">
                                 <h2>deaths</h2>
                                 <h1>{{this.convertToINR(value.deaths)}}</h1>
-                                <h3>May 10, 2020</h3>
+                                <h3>{{this.getMonth(month)}} {{date}}, {{year}}</h3>
                             </div>
                         </div>
                     </div>
@@ -184,7 +184,7 @@
     <!-- footer -->
     <div class="footer">
         <p class="cp-text">
-            © Copyright 2015 Covid-19 Tracker. All rights reserved.
+            © Copyright {{year}} Covid-19 Tracker. All rights reserved.
         </p>
     </div> <!--header-->
 
