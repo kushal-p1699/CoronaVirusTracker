@@ -1,0 +1,18 @@
+<div class="dialog-container">
+    <div class="heading">
+        <h1 mat-dialog-title>Select the country name</h1>
+    </div>
+    <form [formGroup]="dialogForm" (ngSubmit)="getCountryName()" >
+        <div class="select-menu">
+            <select  formControlName = "countryName"  name="country" class="country" >
+                <option value="" disabled>Select Country</option>
+                <option *ngFor="let value of covid_data; let i = index" [value]="value.country">{{value.country}}</option>  
+            </select>
+        </div>
+
+        <div class="dialog-button">
+            <button mat-button type="submit">Done</button>
+            <button mat-button (click)="onClickCancel()" >Cancel</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,43 @@
+.heading{
+}
+.heading h1 {
+    text-align: center;
+    font-weight: 80px;
+    position: relative;
+}
+
+.heading input{
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+.select-menu {
+    text-align: center;
+    position: relative;
+    font-family: Arial;
+    padding-top: 10%;
+}
+.select-menu select {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    outline-color: rgb(13, 158, 255);
+}
+.dialog-button button{
+    width: 50%;
+    padding: 10px;
+    background-color: rgba(42, 141, 235, 0.911);
+    color: white;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0.5rem;
+}
+.dialog-button {
+    text-align: center;
+    padding-top: 10%;
+    display: flex;
+}
+
